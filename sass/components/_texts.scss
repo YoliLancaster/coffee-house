@@ -1,0 +1,66 @@
+.accent {
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--color-text-accent);
+
+  @media screen and (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+    font-size: clamp(2rem, 0.098rem + 7.61vw, 3.75rem);
+}
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.25;
+ 
+@media screen and (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+    font-size: clamp(2rem, 0.098rem + 7.61vw, 3.75rem);
+}
+
+  &--light {
+    color: var(--color-text-light);
+  }
+}
+
+.card {
+  color: var(--color-text-dark);
+
+  &--title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &--description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.app-text {
+  font-size: 10px;
+  line-height: 1.4;
+
+  &__capitalize {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  transition: 0.5s ease-in;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}

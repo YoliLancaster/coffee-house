@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <title>Coffee-house</title>
+  <link rel="icon" type="image/png"
+    href="../coffee-house/assets/favicon/favicon-32x32.png"
+    sizes="32x32" />
+  <link rel="icon" type="image/png"
+    href="../coffee-house/assets/favicon/favicon-16x16.png"
+    sizes="16x16" />
+  <link rel="stylesheet"
+    href="../coffee-house/sass/style.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="../coffee-house/index.html"><img
+              src="../coffee-house/assets/img/logo.png"
+              alt="logo Resourse Coffee-house" /></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__link-list">
+            <li class="header__link">
+              <a href="#choice">Favorite coffee</a>
+            </li>
+            <li class="header__link"><a
+                href="#gallery">About</a></li>
+            <li class="header__link"><a href="#app">Mobile
+                app</a></li>
+            <li class="header__link"><a
+                href="#contacts">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="header__menu">
+          <a class="header__menu-item header__link"
+            href="../coffee-house/menu-coffee.html"
+            rel="noopener noreferrer">Menu</a>
+          <svg width="20" height="20">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-coffee-cup">
+            </use>
+          </svg>
+        </div>
+        <button type="button"
+          class="button button__burger-menu menu-btn-open menu-btn-close"></button>
+
+        <div class="mobile-menu">
+
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item header__link">
+              <a href="#choice">Favorite coffee</a>
+            </li>
+            <li class="mobile-menu__item header__link"><a
+                href="#gallery">About</a></li>
+            <li class="mobile-menu__item header__link"><a
+                href="#app">Mobile
+                app</a></li>
+            <li class="mobile-menu__item header__link"><a
+                href="#contacts">Contact us</a></li>
+          </ul>
+
+          <div class="mobile-menu__addon">
+            <a class="mobile-menu__item header__link"
+              href="../coffee-house/menu-coffee.html"
+              rel="noopener noreferrer">Menu</a>
+            <svg width="40" height="40">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-coffee-cup-2">
+              </use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <div class="hero__container">
+
+          <video class="hero__video" playsinline autoplay
+            muted loop>
+            <source src="./assets/hero-video.webm"
+              type="video/webm">
+          </video>
+          <div class="hero__content">
+            <h1 class="title title--light hero__title">
+              <span class="hero__title accent">Enjoy</span>
+              premium coffee at
+              our charming cafe
+            </h1>
+            <p class="hero__decription">
+              With its inviting atmosphere and delicious
+              coffee options, the
+              Coffee House Resource is a popular destination
+              for coffee lovers
+              and those seeking a warm and inviting space to
+              enjoy their
+              favorite beverage.
+            </p>
+            <a class="hero__btn-link"
+              href="../coffee-house/menu-coffee.html">
+              <span class="hero__btn-container">
+                <span class="hero__btn-txt">Menu</span>
+                <img class="hero__btn-icon"
+                  src="..//coffee-house/assets/img/coffee-cup.svg"
+                  alt="" />
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="section choice" id="choice">
+      <div class="container">
+        <h2 class="title choice__title">
+          Choose your <span class="accent">favorite</span>
+          coffee
+        </h2>
+        <div class="choice__slider-wrapper">
+
+          <button
+            class="button button__slider button__slider--left"
+            type="button" id="btn-prev">
+            <svg class="" width="24" height="24">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-arrow">
+              </use>
+            </svg>
+          </button>
+
+
+          <div class="choice__slider">
+            <div class="choice__slider-content" id="slider">
+
+              <div class="choice__slider-item">
+                <img class="choice__slider-img"
+                  src="..//coffee-house/assets/img/coffee-slider-1.webp"
+                  alt="S’mores Frappuccino" />
+                <h3 class="card card--title">S’mores
+                  Frappuccino
+                </h3>
+                <p class="card card--description centered">
+                  This new drink takes an espresso and mixes
+                  it
+                  with brown sugar
+                  and cinnamon before being topped with oat
+                  milk.
+                </p>
+                <h3 class="card card--title">$5.50</h3>
+              </div>
+              <div class="choice__slider-item"><img
+                  class="choice__slider-img"
+                  src="..//coffee-house/assets/img/coffee-slider-2.webp"
+                  alt="S’mores Frappuccino" />
+                <h3 class="card card--title">S’mores
+                  Frappuccino
+                </h3>
+                <p class="card card--description centered">
+                  This new drink takes an espresso and mixes
+                  it
+                  with brown sugar
+                  and cinnamon before being topped with oat
+                  milk.
+                </p>
+                <h3 class="card card--title">$5.50</h3>
+              </div>
+              <div class="choice__slider-item"><img
+                  class="choice__slider-img"
+                  src="..//coffee-house/assets/img/coffee-slider-3.webp"
+                  alt="S’mores Frappuccino" />
+                <h3 class="card card--title">S’mores
+                  Frappuccino
+                </h3>
+                <p class="card card--description centered">
+                  This new drink takes an espresso and mixes
+                  it
+                  with brown sugar
+                  and cinnamon before being topped with oat
+                  milk.
+                </p>
+                <h3 class="card card--title">$5.50</h3>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <button
+            class="button button__slider button__slider--right"
+            type="button" id="btn-next">
+            <svg class="" width="24" height="24">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-arrow">
+              </use>
+            </svg>
+          </button>
+
+        </div>
+
+        <div class="choice__progress-wrapper">
+          <div class="choice__progress">
+            <div class="choice__progress-item">
+              <div class="choice__progress-line"></div>
+            </div>
+            <div class="choice__progress-item">
+              <div class="choice__progress-line"></div>
+            </div>
+            <div class="choice__progress-item">
+              <div class="choice__progress-line"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <h2 class="title gallery__title">
+          Resource is
+          <span class="accent">the perfect and cozy
+            place</span> where you can
+          enjoy a variety of hot beverages, relax, catch up
+          with friends, or
+          get some work done.
+        </h2>
+        <div class="gallery__grid">
+          <div class="gallery__box">
+            <img class="gallery__item"
+              src="../coffee-house/assets/img/about-1.webp"
+              alt="a girl" />
+          </div>
+          <div class="gallery__box">
+            <img class="gallery__item"
+              src="../coffee-house/assets/img/about-3.webp"
+              alt="a boy" />
+          </div>
+          <div class="gallery__box">
+            <img class="gallery__item"
+              src="../coffee-house/assets/img/about-4.webp"
+              alt="a couple" />
+          </div>
+          <div class="gallery__box">
+            <img class="gallery__item"
+              src="../coffee-house/assets/img/about-2.webp"
+              alt="a cup" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section app" id="app">
+      <div class="container app__wrapper">
+        <div class="app__text-side">
+          <h2 class="title">
+            <span class="accent">Download</span> our apps to
+            start ordering
+          </h2>
+          <p class="card--description">
+            Download the Resource app today and experience
+            the comfort of
+            ordering your favorite coffee from wherever you
+            are
+          </p>
+          <div class="app__btn-wrapper">
+            <div class="app__apple">
+              <svg class="app__icon" width="36" height="36">
+                <use
+                  href="../coffee-house/assets/img/symbol-defs.svg#icon-apple">
+                </use>
+              </svg>
+              <p class="app-text">
+                Available on the<br />
+                <span class="app-text__capitalize">App
+                  Store</span>
+              </p>
+            </div>
+            <div class="app__google">
+              <svg class="app__icon" width="36" height="36">
+                <use
+                  href="../coffee-house/assets/img/symbol-defs.svg#icon-google">
+                </use>
+              </svg>
+              <p class="app-text">
+                Available on <br />
+                <span class="app-text__capitalize">Google
+                  Play</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="app__img-side">
+          <img class="app__img"
+            src="..//coffee-house/assets/img/mobile-screens.webp"
+            alt="mobile screens" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container" id="contacts">
+    <div class="footer">
+      <div class="footer__left">
+        <h2 class="title title--light">
+          Sip, Savor, Smile. <span class="accent">It’s
+            coffee time!</span>
+        </h2>
+        <div class="footer__social-wrapper">
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-twitter">
+            </use>
+          </svg>
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-instagram">
+            </use>
+          </svg>
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-facebook">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__right">
+        <h3 class="footer__contacts">Contact us</h3>
+        <div class="footer__contacts-wrapper">
+          <div
+            class="footer__contacts-link footer__contacts-link--decoration">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-address">
+              </use>
+            </svg>
+            <a target="_blank" class="footer__link"
+              href="https://maps.app.goo.gl/ynB7ehjF3h28dfeb6">8558
+              Green Rd., LA</a>
+          </div>
+          <div
+            class="footer__contacts-link footer__contacts-link--decoration">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-phone">
+              </use>
+            </svg>
+            <a class="footer__link"
+              href="tel:+16035550123">+1 (603) 555-0123</a>
+          </div>
+          <div class="footer__contacts-link">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-clock">
+              </use>
+            </svg>
+            <p class="footer__link">Mon-Sat: 9:00 AM – 23:00
+              PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="..//coffee-house/slider.js"></script>
+  <script src="..//coffee-house/mobile-menu.js"></script>
+
+
+</body>
+
+</html>

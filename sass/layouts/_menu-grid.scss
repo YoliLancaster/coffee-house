@@ -1,0 +1,131 @@
+.menu {
+  &__title {
+    width: 800px;
+    margin: 0 280px;
+
+    @media screen and (max-width: $bp-desktop) and (min-width: $bp-tablet) {
+      margin: 0 auto;
+      width: clamp(43rem, 30.556rem + 25.93vw, 50rem);
+    }
+
+    @media screen and (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+      margin: 0 auto;
+      width: clamp(21.75rem, -1.348rem + 92.39vw, 43rem);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
+    grid-auto-rows: 506px;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__card-container {
+    display: flex;
+    width: 310px;
+    height: 506px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid var(--border-light, #c1b6ad);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 14px 4px #c1b6ad;
+    }
+
+    &:hover .menu__img {
+      transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1090px) {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  &__img {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+
+  &__card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 19px;
+
+    &--description {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &--price {
+      margin-top: auto;
+    }
+  }
+
+ &__item_hidden{
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
+
+ &__refresh_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+&__filter-item_active{
+  background: var(--color-border-dark);
+      color: var(--color-bg-body);
+      cursor: default;
+
+      
+}
+}
+
+.fix {
+  padding: 0px 118px 7px 0px;
+}
+

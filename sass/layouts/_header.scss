@@ -1,0 +1,76 @@
+.header {
+  margin: 20px 0 13px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__link-list {
+    display: flex;
+    padding-bottom: 9px;
+    gap: 41px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: var(--color-text-dark);
+    background: linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+    background-size: 0 2px;
+    transition: background 0.5s ease 0s;
+    text-decoration: none;
+
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
+
+  &__menu-page{
+    color: var(--color-text-dark);
+    background: linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+    background-size: 100% 2px;  
+  }
+
+  &__menu-item {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-bottom: 9px;
+
+    &--onPage {
+      background: linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+      background-size: 100% 2px;
+      height: fit-content;
+    margin-top: 15px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}
+
+

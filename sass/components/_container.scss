@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (max-width: 590px) {
+    padding: 0 16px;
+  }
+}
+
+.section {
+  margin-bottom: 100px;
+}

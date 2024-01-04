@@ -1,0 +1,81 @@
+.app {
+  margin: 0 0 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-desktop) and (min-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 144px;
+    width: 630px;
+
+    @media screen and (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+      margin-top: 0px;
+      width: clamp(21.75rem, -3.897rem + 97.7vw, 43rem);
+    }
+  }
+
+  &__img-side {
+    display: flex;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-top: 100px;
+      margin-left: 0px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-top: 41px;
+    }
+  }
+
+  &__img {
+    @media screen and (max-width: $bp-tablet) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 687px) {
+      width: 100%;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (max-width: 480px) and (min-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__apple,
+  &__google {
+    display: flex;
+    gap: 8px;
+    width: 200px;
+    border-radius: 100px;
+    padding: 12px 20px;
+    border: solid 1px var(--color-border-dark);
+    background-color: transparent;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-bg-container);
+      fill: var(--color-text-light);
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    &:hover .app-text {
+      color: var(--color-text-light);
+    }
+  }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <title>Coffee-house</title>
+  <link rel="icon" type="image/png"
+    href="../coffee-house/assets/favicon/favicon-32x32.png"
+    sizes="32x32" />
+  <link rel="icon" type="image/png"
+    href="../coffee-house/assets/favicon/favicon-16x16.png"
+    sizes="16x16" />
+  <link rel="stylesheet"
+    href="../coffee-house/sass/style.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="../coffee-house/index.html"><img
+              src="../coffee-house/assets/img/logo.png"
+              alt="logo Resourse Coffee-house" /></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__link-list">
+            <li class="header__link">
+              <a href="../coffee-house/index.html#choice">Favorite
+                coffee</a>
+            </li>
+            <li class="header__link">
+              <a
+                href="../coffee-house/index.html#gallery">About</a>
+            </li>
+            <li class="header__link">
+              <a href="../coffee-house/index.html#app">Mobile
+                app</a>
+            </li>
+            <li class="header__link"><a
+                href="#contacts">Contact us</a></li>
+          </ul>
+        </nav>
+        <div
+          class="header__menu header__menu-page header__menu--onPage">
+          <a class="header__menu-item"
+            href="../coffee-house/menu-coffee.html"
+            rel="noopener noreferrer">Menu</a>
+          <svg width="20" height="20">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-coffee-cup">
+            </use>
+          </svg>
+        </div>
+        <button type="button"
+          class="button button__burger-menu menu-btn-open menu-btn-close"></button>
+
+        <div class="mobile-menu">
+
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="../coffee-house/index.html#choice">Favorite
+                coffee</a>
+            </li>
+            <li class="mobile-menu__item"><a
+                href="../coffee-house/index.html#gallery">About</a>
+            </li>
+            <li class="mobile-menu__item"><a
+                href="../coffee-house/index.html#app">Mobile
+                app</a></li>
+            <li class="mobile-menu__item"><a
+                href="#contacts">Contact us</a></li>
+          </ul>
+
+          <div class="mobile-menu__addon">
+            <a class="mobile-menu__item header__link"
+              href="../coffee-house/menu-coffee.html"
+              rel="noopener noreferrer">Menu</a>
+            <svg width="40" height="40">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-coffee-cup-2">
+              </use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section menu">
+      <div class="container">
+        <h1 class="title centered menu__title">
+          Behind each of our cups hides an
+          <span class="accent">amazing surprise</span>
+        </h1>
+
+        <div class="menu__tabs">
+          <div
+            class="menu__tab-item menu__filter-item_active">
+            <span
+              class="menu__tab-img menu__tab-img--coffee">
+              <img class="menu__tab-icon"
+                src="..//coffee-house/assets/img/coffee.png"
+                alt="" /></span>Coffee
+          </div>
+
+          <div class="menu__tab-item">
+            <span class="menu__tab-img">
+              <img class="menu__tab-icon"
+                src="..//coffee-house/assets/img/pot.png"
+                alt="" /></span>Tea
+          </div>
+
+          <div type="button" class="menu__tab-item">
+            <span class="menu__tab-img">
+              <img class="menu__tab-icon"
+                src="..//coffee-house/assets/img/dessert.png"
+                alt="" /></span>Dessert
+          </div>
+        </div>
+
+
+        <div class="menu__grid">
+          <!-- <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-1.webp"
+                alt="Irish coffee" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Irish coffee</h3>
+                <p class="card-text">
+                  Fragrant black coffee with Jameson Irish
+                  whiskey and whipped
+                  milk
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$7.00</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-2.webp"
+                alt="Kahlua coffee" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Kahlua coffee</h3>
+                <p class="card-text">
+                  Classic coffee with milk and Kahlua
+                  liqueur under a cap of
+                  frothed milk
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$7.00</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-3.webp"
+                alt="Honey raf" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Honey raf</h3>
+                <p class="card-text">
+                  Espresso with frothed milk, cream and
+                  aromatic honey
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$5.50</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-4.webp"
+                alt="Ice cappuccino" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Ice cappuccino</h3>
+                <p class="card-text">
+                  Cappuccino with soft thick foam in summer
+                  version with ice
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$5.00</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-5.webp"
+                alt="Espresso" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div
+                class="menu__card-bottom--description fix">
+                <h3 class="card-title">Espresso</h3>
+                <p class="card-text">Classic black coffee
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$4.50</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-6.webp"
+                alt="Latte" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Latte</h3>
+                <p class="card-text">
+                  Espresso coffee with the addition of
+                  steamed milk and dense
+                  milk foam
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$5.50</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-7.webp"
+                alt="Latte macchiato" class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Latte macchiato</h3>
+                <p class="card-text">
+                  Espresso with frothed milk and chocolate
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$5.50</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card-container">
+            <div class="menu__img-wrapper">
+              <img
+                src="../coffee-house/assets/img/menu-coffee/coffee-8.webp"
+                alt="Coffee with cognac"
+                class="menu__img" />
+            </div>
+
+            <div class="menu__card-bottom">
+              <div class="menu__card-bottom--description">
+                <h3 class="card-title">Coffee with cognac
+                </h3>
+                <p class="card-text">
+                  Fragrant black coffee with cognac and
+                  whipped cream
+                </p>
+              </div>
+              <div class="menu__card-bottom--price">
+                <h3 class="card-title">$6.50</h3>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <button type="button" class="button button__reload">
+          <svg class="button__reload-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#refresh">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="container" id="contacts">
+    <div class="footer">
+      <div class="footer__left">
+        <h2 class="title title--light">
+          Sip, Savor, Smile. <span class="accent">It’s
+            coffee time!</span>
+        </h2>
+        <div class="footer__social-wrapper">
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-twitter">
+            </use>
+          </svg>
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-instagram">
+            </use>
+          </svg>
+          <svg class="footer__social-icon" width="24"
+            height="24">
+            <use
+              href="../coffee-house/assets/img/symbol-defs.svg#icon-facebook">
+            </use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__right">
+        <h3 class="footer__contacts">Contact us</h3>
+        <div class="footer__contacts-wrapper">
+          <div
+            class="footer__contacts-link footer__contacts-link--decoration">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-address">
+              </use>
+            </svg>
+            <a target="_blank" class="footer__link"
+              href="https://maps.app.goo.gl/ynB7ehjF3h28dfeb6">8558
+              Green Rd., LA</a>
+          </div>
+          <div
+            class="footer__contacts-link footer__contacts-link--decoration">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-phone">
+              </use>
+            </svg>
+            <a class="footer__link"
+              href="tel:+16035550123">+1 (603) 555-0123</a>
+          </div>
+          <div class="footer__contacts-link">
+            <svg width="20" height="20">
+              <use
+                href="../coffee-house/assets/img/symbol-defs.svg#icon-clock">
+              </use>
+            </svg>
+            <p class="footer__link">Mon-Sat: 9:00 AM – 23:00
+              PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay overlay__hidden"></div>
+
+
+  <script type="module"
+    src="..//coffee-house/load-more.js"></script>
+  <script type="module"
+    src="..//coffee-house/modal.js"></script>
+  <script src="..//coffee-house/mobile-menu.js"></script>
+
+</body>
+
+</html>
