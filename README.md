@@ -1,1 +1,1 @@
-# Stack: HTML, CSS, SASS, vanilla JS, JSON
+# Stack: HTML, CSS, SASS, vanilla JS, JSON, BEM
